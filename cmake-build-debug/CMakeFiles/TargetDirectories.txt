@@ -1,0 +1,3 @@
+/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/CMakeFiles/ProyectoFinalAlgoritmos.dir
