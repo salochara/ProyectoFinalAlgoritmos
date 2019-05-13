@@ -37,6 +37,48 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="radixSort">
+				<Option output="/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/radixSort" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/Makefile&quot;  VERBOSE=1 radixSort"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="radixSort/fast">
+				<Option output="/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/radixSort" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/Makefile&quot;  VERBOSE=1 radixSort/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="ProyectoFinalAlgoritmos">
 				<Option output="/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug/ProyectoFinalAlgoritmos" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/cmake-build-debug"/>
@@ -82,6 +124,9 @@
 		</Build>
 		<Unit filename="/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/main.cpp">
 			<Option target="ProyectoFinalAlgoritmos"/>
+		</Unit>
+		<Unit filename="/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/radixSort.cpp">
+			<Option target="radixSort"/>
 		</Unit>
 		<Unit filename="/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

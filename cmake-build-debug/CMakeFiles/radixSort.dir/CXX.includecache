@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/salo/CLionProjects/ProyectoFinalAlgoritmos/radixSort.cpp
+iostream
+-
+queue
+-
+vector
+-
+time.h
+-
+

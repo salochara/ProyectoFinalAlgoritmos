@@ -4,3 +4,4 @@ project(ProyectoFinalAlgoritmos)
 set(CMAKE_CXX_STANDARD 11)
 
 add_executable(ProyectoFinalAlgoritmos main.cpp)
+add_executable(radixSort radixSort.cpp)
