@@ -49,6 +49,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/bubbleSort.dir/DependInfo.cmake"
+  "CMakeFiles/quickSort.dir/DependInfo.cmake"
+  "CMakeFiles/mergeSort.dir/DependInfo.cmake"
   "CMakeFiles/radixSort.dir/DependInfo.cmake"
   "CMakeFiles/ProyectoFinalAlgoritmos.dir/DependInfo.cmake"
   )

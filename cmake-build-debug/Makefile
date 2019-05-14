@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named bubbleSort
+
+# Build rule for target.
+bubbleSort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 bubbleSort
+.PHONY : bubbleSort
+
+# fast build rule for target.
+bubbleSort/fast:
+	$(MAKE) -f CMakeFiles/bubbleSort.dir/build.make CMakeFiles/bubbleSort.dir/build
+.PHONY : bubbleSort/fast
+
+#=============================================================================
+# Target rules for targets named quickSort
+
+# Build rule for target.
+quickSort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quickSort
+.PHONY : quickSort
+
+# fast build rule for target.
+quickSort/fast:
+	$(MAKE) -f CMakeFiles/quickSort.dir/build.make CMakeFiles/quickSort.dir/build
+.PHONY : quickSort/fast
+
+#=============================================================================
+# Target rules for targets named mergeSort
+
+# Build rule for target.
+mergeSort: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mergeSort
+.PHONY : mergeSort
+
+# fast build rule for target.
+mergeSort/fast:
+	$(MAKE) -f CMakeFiles/mergeSort.dir/build.make CMakeFiles/mergeSort.dir/build
+.PHONY : mergeSort/fast
+
+#=============================================================================
 # Target rules for targets named radixSort
 
 # Build rule for target.
@@ -135,6 +174,33 @@ ProyectoFinalAlgoritmos: cmake_check_build_system
 ProyectoFinalAlgoritmos/fast:
 	$(MAKE) -f CMakeFiles/ProyectoFinalAlgoritmos.dir/build.make CMakeFiles/ProyectoFinalAlgoritmos.dir/build
 .PHONY : ProyectoFinalAlgoritmos/fast
+
+bubbleSort.o: bubbleSort.cpp.o
+
+.PHONY : bubbleSort.o
+
+# target to build an object file
+bubbleSort.cpp.o:
+	$(MAKE) -f CMakeFiles/bubbleSort.dir/build.make CMakeFiles/bubbleSort.dir/bubbleSort.cpp.o
+.PHONY : bubbleSort.cpp.o
+
+bubbleSort.i: bubbleSort.cpp.i
+
+.PHONY : bubbleSort.i
+
+# target to preprocess a source file
+bubbleSort.cpp.i:
+	$(MAKE) -f CMakeFiles/bubbleSort.dir/build.make CMakeFiles/bubbleSort.dir/bubbleSort.cpp.i
+.PHONY : bubbleSort.cpp.i
+
+bubbleSort.s: bubbleSort.cpp.s
+
+.PHONY : bubbleSort.s
+
+# target to generate assembly for a file
+bubbleSort.cpp.s:
+	$(MAKE) -f CMakeFiles/bubbleSort.dir/build.make CMakeFiles/bubbleSort.dir/bubbleSort.cpp.s
+.PHONY : bubbleSort.cpp.s
 
 main.o: main.cpp.o
 
@@ -162,6 +228,60 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles/ProyectoFinalAlgoritmos.dir/build.make CMakeFiles/ProyectoFinalAlgoritmos.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+mergeSort.o: mergeSort.cpp.o
+
+.PHONY : mergeSort.o
+
+# target to build an object file
+mergeSort.cpp.o:
+	$(MAKE) -f CMakeFiles/mergeSort.dir/build.make CMakeFiles/mergeSort.dir/mergeSort.cpp.o
+.PHONY : mergeSort.cpp.o
+
+mergeSort.i: mergeSort.cpp.i
+
+.PHONY : mergeSort.i
+
+# target to preprocess a source file
+mergeSort.cpp.i:
+	$(MAKE) -f CMakeFiles/mergeSort.dir/build.make CMakeFiles/mergeSort.dir/mergeSort.cpp.i
+.PHONY : mergeSort.cpp.i
+
+mergeSort.s: mergeSort.cpp.s
+
+.PHONY : mergeSort.s
+
+# target to generate assembly for a file
+mergeSort.cpp.s:
+	$(MAKE) -f CMakeFiles/mergeSort.dir/build.make CMakeFiles/mergeSort.dir/mergeSort.cpp.s
+.PHONY : mergeSort.cpp.s
+
+quickSort.o: quickSort.cpp.o
+
+.PHONY : quickSort.o
+
+# target to build an object file
+quickSort.cpp.o:
+	$(MAKE) -f CMakeFiles/quickSort.dir/build.make CMakeFiles/quickSort.dir/quickSort.cpp.o
+.PHONY : quickSort.cpp.o
+
+quickSort.i: quickSort.cpp.i
+
+.PHONY : quickSort.i
+
+# target to preprocess a source file
+quickSort.cpp.i:
+	$(MAKE) -f CMakeFiles/quickSort.dir/build.make CMakeFiles/quickSort.dir/quickSort.cpp.i
+.PHONY : quickSort.cpp.i
+
+quickSort.s: quickSort.cpp.s
+
+.PHONY : quickSort.s
+
+# target to generate assembly for a file
+quickSort.cpp.s:
+	$(MAKE) -f CMakeFiles/quickSort.dir/build.make CMakeFiles/quickSort.dir/quickSort.cpp.s
+.PHONY : quickSort.cpp.s
 
 radixSort.o: radixSort.cpp.o
 
@@ -198,11 +318,23 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... bubbleSort"
+	@echo "... quickSort"
+	@echo "... mergeSort"
 	@echo "... radixSort"
 	@echo "... ProyectoFinalAlgoritmos"
+	@echo "... bubbleSort.o"
+	@echo "... bubbleSort.i"
+	@echo "... bubbleSort.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mergeSort.o"
+	@echo "... mergeSort.i"
+	@echo "... mergeSort.s"
+	@echo "... quickSort.o"
+	@echo "... quickSort.i"
+	@echo "... quickSort.s"
 	@echo "... radixSort.o"
 	@echo "... radixSort.i"
 	@echo "... radixSort.s"

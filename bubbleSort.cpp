@@ -4,26 +4,38 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 class BubbleSort{
 public:
-    BubbleSort ();
-    void bSort(vector <int> & );
-    void printVector(vector <int>);
+    vector <int> bubbleVector;
+    BubbleSort();
+    void bSort();
+    void initializeVectorWithRandomNumbers(vector<int> & vector);
+    const void printVector();
 };
 
+void BubbleSort::initializeVectorWithRandomNumbers(vector<int> & vector) {
+    // Inicializa un vector con 10 números aleatrorios entre el 0 y 99
+    srand(time(NULL));
+    for (int i = 0; i < 10; ++i) {
+        vector.push_back(rand() % 100);
+    }
+}
 BubbleSort::BubbleSort() {}
 
-void BubbleSort::printVector(vector <int> bubbleVector)
+const void BubbleSort::printVector()
 {
+    // Para imprimir el vector "bubbleVector" de la clase Bubble Sort
     for (int i = 0; i < bubbleVector.size(); ++i) {
         cout << bubbleVector[i] << " ";
     }
     cout << endl;
 }
 
-void BubbleSort::bSort(vector <int> & bubbleVector)
+void BubbleSort::bSort()
 {
-    for (int i = i; i < bubbleVector.size() ; ++i)
+    // El método de ordenamiento Bubble Sort. Se trabaja con el atributo "bubbleVector" de la clase Bubble Sort
+    for (unsigned int i = 0; i < bubbleVector.size() ; ++i)
     {
         for (int j = 0; j < bubbleVector.size() - 1; ++j)
         {
@@ -35,22 +47,22 @@ void BubbleSort::bSort(vector <int> & bubbleVector)
 
 int main()
 {
+  // Se inicializa el objeto "bubbleSort" de la clase Bubble Sort
   BubbleSort bubbleSort;
-  vector <int> bubbleVector;
 
-  int array [] = {6,7,2,100,8,5,1,0,89};
-  int sizeOfArray = sizeof(array) / sizeof(array[0]);
+  // Se inicializa el "bubbleVector" con 10 números aleatorios
+  bubbleSort.initializeVectorWithRandomNumbers(bubbleSort.bubbleVector);
 
-  for (int i = 0; i < sizeOfArray; ++i) {
-        bubbleVector.push_back(array[i]);
-    }
+  // Se imprime a pantalla el vector original
+  cout << "The original vector is: " << endl;
+  bubbleSort.printVector();
+  cout << "----------------------------" << endl;
 
-  bubbleSort.bSort(bubbleVector);
+  // Se aplica el algoritmo de ordenamiento Bubble Sort
+  bubbleSort.bSort();
 
-   /* for (int i = 0; i < bubbleSort.bubbleVector.size(); ++i) {
-        cout << bubbleSort.bubbleVector[i] << " ";
-    }
-    cout << endl;*/
-  bubbleSort.printVector(bubbleVector);
+  // Se imprime el vector despues de aplicar BUBBLE SORT
+  cout << "The sorted vector after applying BUBBLE SORT is: " << endl;
+  bubbleSort.printVector();
 }
 
