@@ -35,7 +35,7 @@ const void BubbleSort::printVector()
 void BubbleSort::bSort()
 {
     // El método de ordenamiento Bubble Sort. Se trabaja con el atributo "bubbleVector" de la clase Bubble Sort
-    for (unsigned int i = 0; i < bubbleVector.size() ; ++i)
+    for (int i = 0; i < bubbleVector.size() ; ++i)
     {
         for (int j = 0; j < bubbleVector.size() - 1; ++j)
         {

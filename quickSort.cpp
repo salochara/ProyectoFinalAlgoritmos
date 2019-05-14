@@ -76,6 +76,4 @@ int main()
     cout << "The sorted array using QUICK SORT is:" << endl;
     qSort.printArray(n);
 
-
-
 }
