@@ -10,15 +10,15 @@ public:
     vector <int> bubbleVector;
     BubbleSort();
     void bSort();
-    void initializeVectorWithRandomNumbers(vector<int> & vector);
+    void initializeVectorWithRandomNumbers();
     const void printVector();
 };
 
-void BubbleSort::initializeVectorWithRandomNumbers(vector<int> & vector) {
+void BubbleSort::initializeVectorWithRandomNumbers() {
     // Inicializa un vector con 10 números aleatrorios entre el 0 y 99
     srand(time(NULL));
     for (int i = 0; i < 10; ++i) {
-        vector.push_back(rand() % 100);
+        bubbleVector.push_back(rand() % 100);
     }
 }
 BubbleSort::BubbleSort() {}
@@ -51,7 +51,7 @@ int main()
   BubbleSort bubbleSort;
 
   // Se inicializa el "bubbleVector" con 10 números aleatorios
-  bubbleSort.initializeVectorWithRandomNumbers(bubbleSort.bubbleVector);
+  bubbleSort.initializeVectorWithRandomNumbers();
 
   // Se imprime a pantalla el vector original
   cout << "The original vector is: " << endl;
