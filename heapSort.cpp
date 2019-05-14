@@ -69,11 +69,9 @@ void HeapSort::maxHeapify(vector <int> & vector, int n,int root){
 }
 
 int main(){
-    vector<int> heapVector {12, 8, 2, 78, 21};
-
+    // Se debe que compilar en gcc ++11. El comando es: g++ -std=c++11 heapSort.cpp
+    vector <int> heapVector {7,5,90,32,50};
     HeapSort h1;
-
-//    h1.initializeVectorWithRandomNumbers(heapVector);
 
     cout << "The original vector is:" << endl;
     h1.printVector(heapVector);
@@ -85,5 +83,4 @@ int main(){
     h1.printVector(heapVector);
 
     return 0;
-
 }
